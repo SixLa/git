@@ -1,6 +1,4 @@
-# ppnum_git
-
-  
+ 
 ls => lister les fichiers 
 cd = changer de dossier ( avec le nom de dossier en plus ) 
 touch : créer un fichier  ( ex: touch index.html ) 
@@ -33,3 +31,31 @@ git log pour vérifier le commit
 répéter pour avoir plusieurs commits 
 
 git status pour vérifier l'état
+
+
+========= faire le lien avec github ====
+
+- créez un repo
+- récupérer la commande exposée par github quand vous avez créé votre repo
+( celle qui fait git remote add origin en https, pas ssh )
+
+- lancez la dans le terminal uniquement quand vous êtes bien dans le dossier de travail de tout à l'heure
+
+vérifiez avec git remote -v
+
+
+
+========= jouer avec le serveur =====
+
+/!\ modifiez toujours la même ligne pour les commits à venir pour ce tp ( ligne 1 typiquement )
+
+1) créer une nouvelle branche avec 
+git branch 'nomDeMaBranche'
+2) aller sur la nouvelle branche avec la commande git checkout 'leNomDeMaBranche'
+3) faites des modifications sur votre fichier
+4) add + commit et vérifier avec git log
+5) revenez sur la branche master avec  la commande git checkout master en vérifiant avec git log que le commit fait sur l'autre branche n'existe pas sur master
+6) refaites un nouveau commit sur master ( en modifiant un fichier + add + commit ) et vérifiez que ce commit est ok avec git log
+7) tentez de fusionner les deux branches, en faisant un git merge NomDeMABranche via master
+8) résolvez les conflits 
+9) commitez pusher
