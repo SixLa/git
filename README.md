@@ -63,6 +63,9 @@ git branch 'nomDeMaBranche'
 
 ================ RESOURCES ==========
 
+explication pas à pas :
+https://perso.liris.cnrs.fr/pierre-antoine.champin/enseignement/intro-git/
+
 rappel des commandes utiles : 
 https://www.hostinger.fr/tutoriels/commandes-git/
 
