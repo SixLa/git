@@ -59,3 +59,31 @@ git branch 'nomDeMaBranche'
 7) tentez de fusionner les deux branches, en faisant un git merge NomDeMABranche via master
 8) résolvez les conflits 
 9) commitez pusher
+
+
+================ RESOURCES ==========
+
+rappel des commandes utiles : 
+https://www.hostinger.fr/tutoriels/commandes-git/
+
+description du workflow et des commandes :
+https://www.hostinger.fr/tutoriels/tuto-git/
+divisée en articles assez complets : https://carlchenet.com/category/debuter-avec-git/
+
+les branches :
+https://carlchenet.com/debuter-avec-git-partie-4-les-commits-et-les-branches/
+avec la doc officielle ( pour comprendre la théorie derrière, peut aider à structurer la compréhension ) : https://git-scm.com/book/fr/v2/Les-branches-avec-Git-Les-branches-en-bref
+
+cours OpenClassrooms :
+https://openclassrooms.com/fr/courses/1233741-gerez-vos-codes-source-avec-git
+
+git expliqué avec des schémas visuels ( et rappel des commandes )
+https://blog.lesieur.name/comprendre-et-utiliser-git-avec-vos-projets/
+https://marklodato.github.io/visual-git-guide/index-fr.html
+
+
+slides :
+https://raspberry-pi.fr/cours/slides-git.html#/10/1
+
+vidéos :
+https://www.grafikart.fr/tutoriels/git-presentation-1090
