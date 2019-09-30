@@ -84,6 +84,7 @@ https://marklodato.github.io/visual-git-guide/index-fr.html
 
 slides :
 https://raspberry-pi.fr/cours/slides-git.html#/10/1
+http://slides.com/moji3000/git_presentation/fullscreen#/15
 
 vidéos :
 https://www.grafikart.fr/tutoriels/git-presentation-1090
