@@ -1,6 +1,6 @@
 # ppnum_git
 
- 
+  
 ls => lister les fichiers 
 cd = changer de dossier ( avec le nom de dossier en plus ) 
 touch : créer un fichier  ( ex: touch index.html ) 
@@ -22,7 +22,7 @@ les autres commandes ( git ) sont sur la ressource indiquée : http://rogerdudle
 2) cd leNomDuDossierCréé
 3) git init
 4) créer un fichier ( touch nomDeFichier.html )
-5) faire des modif ( en ouvrant le fichier avec un éditeur de texte ou le bloc note + penser à le sauvegarder )
+5) apporterdes modifications au fichier en écrivant quelque chose dedans( en ouvrant le fichier avec un éditeur de texte ou le bloc note + penser à le sauvegarder )
 6) git add leNomDuFichier 
 7) git commit -m  'le message de commit qui donne la raison de vos modifications '
 
