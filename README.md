@@ -69,12 +69,18 @@ répéter pour avoir plusieurs commits
 ========= faire le lien avec github ====
 
 - créez un repo
-- récupérer la commande exposée par github quand vous avez créé votre repo
+- récupérer la commande exposée par github quand vous avez créé votre repo ( le ```git remote add origin URLDeMonRepoCréé``` )
 ( celle qui fait git remote add origin en https, pas ssh )
 
 - lancez la dans le terminal uniquement quand vous êtes bien dans le dossier de travail de tout à l'heure
 
-vérifiez avec git remote -v
+vérifiez avec ```git remote -v```
+
+
+===== faire un push =====
+
+pour envoyer les commit sur le serveur, on fait un ```git push origin master```
+Si vous avez créé une autre branche et que vous êtes dessus, il faudrait indiquer le nom de cette branche à la place de master
 
 
 
