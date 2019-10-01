@@ -1,15 +1,28 @@
  
-ls => lister les fichiers 
+```ls``` => lister les fichiers 
 
-cd = changer de dossier ( avec le nom de dossier en plus ) 
+```cd``` = changer de dossier ( ex: ```cd monDossier``` ) 
 
-touch : créer un fichier  ( ex: touch index.html ) 
+```touch``` : créer un fichier  ( ex: ```touch index.html``` ) 
 
-mkdir => créer un dossier ( ex : mkdir git-test )
+```mkdir``` => créer un dossier ( ex : ```mkdir git-test``` )
 
-pwd => voir le dossier courant
+```pwd``` => voir le dossier courant
 
-rm => supprimer un fichier 
+```rm``` => supprimer un fichier / dossier ( avec le flag -r ) 
+( ex : ```rm monFile.html``` / ex : ```rm -r monDossier```
+
+
+```git status``` pour voir l'état du dossier de travail
+
+```git log``` pour voir l'historique des commit
+
+```git add``` pour ajouter un fichier avant de pouvoir le commiter ( ex: ```git add index.html``` ) 
+
+```git commit -m 'mon message'``` pour l'ensemble des fichiers ajoutés avec ```git add```
+
+
+
 
 
 pensez à renseigner vos informations via les commandes :
@@ -21,21 +34,19 @@ pensez à renseigner vos informations via les commandes :
 
 les autres commandes ( git ) sont sur la ressource indiquée : http://rogerdudler.github.io/git-guide
 
-1) créez un dossier ( avec mkdir )
+1) créez un dossier ( avec ```mkdir``` )
 2) cd leNomDuDossierCréé
 3) git init
-4) créer un fichier ( touch nomDeFichier.html )
+4) créer un fichier ( ```touch nomDeFichier.html``` )
 5) apporterdes modifications au fichier en écrivant quelque chose dedans( en ouvrant le fichier avec un éditeur de texte ou le bloc note + penser à le sauvegarder )
 6) git add leNomDuFichier 
 7) git commit -m  'le message de commit qui donne la raison de vos modifications '
 
 =======
 
-git log pour vérifier le commit
 
 répéter pour avoir plusieurs commits 
 
-git status pour vérifier l'état
 
 
 ========= faire le lien avec github ====
