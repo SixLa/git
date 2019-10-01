@@ -47,6 +47,20 @@ les autres commandes ( git ) sont sur la ressource indiquée : http://rogerdudle
 
 répéter pour avoir plusieurs commits 
 
+=====  branches et conflits ======
+```git branch maBranche``` pour créer une branche
+```git checkout maBranche``` pour se déplacer sur une branche
+```git merge maBranche```  pour merger la branche nommée sur la branche actuelle
+
+1) créez une branche
+2) faites un commit sur master ( en modifiant la ligne 1 de votre fichier )
+3) changez de branche 
+4) nouveau commit sur la meme ligne 
+5) mergez ensuite master sur votre branche
+6) résolvez les conflits !
+7) commitez :)
+
+
 
 
 ========= faire le lien avec github ====
