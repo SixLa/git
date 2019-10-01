@@ -1,9 +1,14 @@
  
 ls => lister les fichiers 
+
 cd = changer de dossier ( avec le nom de dossier en plus ) 
+
 touch : créer un fichier  ( ex: touch index.html ) 
+
 mkdir => créer un dossier ( ex : mkdir git-test )
+
 pwd => voir le dossier courant
+
 rm => supprimer un fichier 
 
 
