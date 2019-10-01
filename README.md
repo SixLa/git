@@ -92,7 +92,7 @@ Si vous avez créé une autre branche et que vous êtes dessus, il faudrait indi
 git branch 'nomDeMaBranche'
 2) aller sur la nouvelle branche avec la commande git checkout 'leNomDeMaBranche'
 3) faites des modifications sur votre fichier
-4) add + commit et vérifier avec git log
+4) add + commit et vérifier avec ```git log```
 5) revenez sur la branche master avec  la commande git checkout master en vérifiant avec git log que le commit fait sur l'autre branche n'existe pas sur master
 6) refaites un nouveau commit sur master ( en modifiant un fichier + add + commit ) et vérifiez que ce commit est ok avec git log
 7) tentez de fusionner les deux branches, en faisant un git merge NomDeMABranche via master
