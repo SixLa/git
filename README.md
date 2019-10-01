@@ -48,8 +48,11 @@ les autres commandes ( git ) sont sur la ressource indiquée : http://rogerdudle
 répéter pour avoir plusieurs commits 
 
 =====  branches et conflits ======
+
 ```git branch maBranche``` pour créer une branche
+
 ```git checkout maBranche``` pour se déplacer sur une branche
+
 ```git merge maBranche```  pour merger la branche nommée sur la branche actuelle
 
 1) créez une branche
