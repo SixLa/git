@@ -14,7 +14,9 @@
 
 ### Commmandes git
 
-```git status``` pour voir l'état du dossier de travail
+``` git init``` initialiser un repository ( repo ) git
+
+```git status``` pour voir l'état du dossier de travail ( vis à vis du stage )
 
 ```git log``` pour voir l'historique des commit
 
@@ -24,13 +26,22 @@
 ```git commit -m 'mon message'``` pour l'ensemble des fichiers ajoutés avec ```git add```
 
 
-
 :warning: pensez à renseigner vos informations via les commandes :warning: 
     
-    git config --global user.email 'votre mail'
+    git config --global user.email 'mon mail'
     git config --global user.name 'mon nom'
     
-    
+ Contexte
+ ------
+ 
+ Git permet de versionner du code, créer des sauvegardes successives ( ce qu'on apppelle un commit ) qui permettent de conserver l'historique des modifications, donc l'évolution du projet, car chaque commit se rajoute à la suite des autres.
+ 
+ Imaginez une personne qui prend une photo d'elle même tous les matins pendant 20ans.
+ Chaque photo représente une légère variation de la veille.
+ En mettant par exemple une date derrière chaque photo, on peut retrouver quel était le visage de cet personne à 21 ans et 4jours par exemple.
+ 
+ Git ne fait qu'observer les fichiers présents dans le **dossier de travail**. On appelle le dossier de travail : le working directory ( vous trouverez des réferences à cette appelation dans les sujet en anglais.
+
     
  Travail en local ( sur le poste de travail uniquement )
  ----
@@ -102,7 +113,8 @@ git branch 'nomDeMaBranche'
 9) commitez pusher
 
 
-================ RESOURCES ==========
+RESSOURCES 
+------
 
 explication pas à pas :
 https://perso.liris.cnrs.fr/pierre-antoine.champin/enseignement/intro-git/
