@@ -1,4 +1,4 @@
- 
+ ### Commandes Unix
 ```ls``` => lister les fichiers 
 
 ```cd``` = changer de dossier ( ex: ```cd monDossier``` ) 
@@ -7,47 +7,47 @@
 
 ```mkdir``` => créer un dossier ( ex : ```mkdir git-test``` )
 
-```pwd``` => voir le dossier courant
+```pwd``` => voir le dossier courant ( pour faire le lien entre le terminal et l'explorateur de fichiers )
 
 ```rm``` => supprimer un fichier / dossier ( avec le flag -r ) 
 ( ex : ```rm monFile.html``` / ex : ```rm -r monDossier```
 
+### Commmandes git
 
 ```git status``` pour voir l'état du dossier de travail
 
 ```git log``` pour voir l'historique des commit
 
-```git add``` pour ajouter un fichier avant de pouvoir le commiter ( ex: ```git add index.html``` ) 
+```git add <nomDeMonFichier>``` pour ajouter un fichier dans le **Stage** avant de pouvoir le commiter ( ex: ```git add index.html``` ) 
+```git add --all ``` permet d'ajouter tous les fichiers du dossier dans lequel vous etes dans le **Stage**
 
 ```git commit -m 'mon message'``` pour l'ensemble des fichiers ajoutés avec ```git add```
 
 
 
-
-
-pensez à renseigner vos informations via les commandes :
+:warning: pensez à renseigner vos informations via les commandes :warning: 
     
     git config --global user.email 'votre mail'
     git config --global user.name 'mon nom'
     
- =====  travail en local ( sur le poste de travail uniquement )
+    
+    
+ Travail en local ( sur le poste de travail uniquement )
+ ----
 
-les autres commandes ( git ) sont sur la ressource indiquée : http://rogerdudler.github.io/git-guide
+Les autres commandes ( git ) sont sur la ressource indiquée : http://rogerdudler.github.io/git-guide
 
-1) créez un dossier ( avec ```mkdir``` )
-2) cd leNomDuDossierCréé
-3) git init
-4) créer un fichier ( ```touch nomDeFichier.html``` )
-5) apporterdes modifications au fichier en écrivant quelque chose dedans( en ouvrant le fichier avec un éditeur de texte ou le bloc note + penser à le sauvegarder )
-6) git add leNomDuFichier 
-7) git commit -m  'le message de commit qui donne la raison de vos modifications '
+1) créez un dossier 
+2) se déplacer dans le dossier
+3) initialiser un repo git
+4) créer un fichier 
+5) apporter des modifications au fichier en écrivant quelque chose dedans ( en ouvrant le fichier avec un éditeur de texte ou le bloc note + penser à le sauvegarder )
+6) ajouter au stage votre fichier 
+7) faites un commit de vos modifications
+8) répéter les opération 5) à 7) pour avoir plusieurs commits 
 
-=======
-
-
-répéter pour avoir plusieurs commits 
-
-=====  branches et conflits ======
+Branches et conflits 
+------
 
 ```git branch maBranche``` pour créer une branche
 
@@ -66,7 +66,8 @@ répéter pour avoir plusieurs commits
 
 
 
-========= faire le lien avec github ====
+Faire le lien avec github 
+------
 
 - créez un repo
 - récupérer la commande exposée par github quand vous avez créé votre repo ( le ```git remote add origin URLDeMonRepoCréé``` )
@@ -84,9 +85,10 @@ Si vous avez créé une autre branche et que vous êtes dessus, il faudrait indi
 
 
 
-========= jouer avec le serveur =====
+Jouer avec le serveur
+-------
 
-/!\ modifiez toujours la même ligne pour les commits à venir pour ce tp ( ligne 1 typiquement )
+:warning: modifiez toujours la même ligne pour les commits à venir pour ce tp ( ligne 1 typiquement )
 
 1) créer une nouvelle branche avec 
 git branch 'nomDeMaBranche'
