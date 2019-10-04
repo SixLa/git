@@ -95,14 +95,23 @@ Les autres commandes ( git ) sont sur la ressource indiquée :
 7) faites un commit de vos modifications
 8) répéter les opération 5) à 7) pour avoir plusieurs commits 
 
-Branches et conflits 
+
+## Branches et conflits 
+
+Contexte
 ------
+
+Commandes
+-----
 
 ```git branch maBranche``` pour créer une branche
 
 ```git checkout maBranche``` pour se déplacer sur une branche
 
 ```git merge maBranche```  pour merger la branche nommée sur la branche actuelle
+
+Instructions
+------
 
 1) créez une branche
 2) faites un commit sur master ( en modifiant la ligne 1 de votre fichier )
@@ -140,13 +149,13 @@ Jouer avec le serveur
 :warning: modifiez toujours la même ligne pour les commits à venir pour ce tp ( ligne 1 typiquement )
 
 1) créer une nouvelle branche avec 
-git branch 'nomDeMaBranche'
+git branch 'nomDeMaBranche' ( remplacer le nom que vous souhaitez)
 2) aller sur la nouvelle branche avec la commande git checkout 'leNomDeMaBranche'
 3) faites des modifications sur votre fichier
 4) add + commit et vérifier avec ```git log```
 5) revenez sur la branche master avec  la commande git checkout master en vérifiant avec git log que le commit fait sur l'autre branche n'existe pas sur master
-6) refaites un nouveau commit sur master ( en modifiant un fichier + add + commit ) et vérifiez que ce commit est ok avec git log
-7) tentez de fusionner les deux branches, en faisant un git merge NomDeMABranche via master
+6) refaites un nouveau commit sur master et vérifiez que ce commit est ok avec git log
+7) tentez de fusionner les deux branches, en faisant un git merge NomDeMaBranche via master
 8) résolvez les conflits 
 9) commitez pusher
 
@@ -155,31 +164,33 @@ RESSOURCES
 ------
 
 explication pas à pas :
-https://perso.liris.cnrs.fr/pierre-antoine.champin/enseignement/intro-git/
+- https://perso.liris.cnrs.fr/pierre-antoine.champin/enseignement/intro-git/
 
 rappel des commandes utiles : 
-http://rogerdudler.github.io/git-guide
-https://www.hostinger.fr/tutoriels/commandes-git/
+- http://rogerdudler.github.io/git-guide
+- https://www.hostinger.fr/tutoriels/commandes-git/
 
 description du workflow et des commandes :
-https://www.hostinger.fr/tutoriels/tuto-git/
-divisée en articles assez complets : https://carlchenet.com/category/debuter-avec-git/
+- https://www.hostinger.fr/tutoriels/tuto-git/
+- divisée en articles assez complets : 
+  - https://carlchenet.com/category/debuter-avec-git/
 
 les branches :
-https://carlchenet.com/debuter-avec-git-partie-4-les-commits-et-les-branches/
-avec la doc officielle ( pour comprendre la théorie derrière, peut aider à structurer la compréhension ) : https://git-scm.com/book/fr/v2/Les-branches-avec-Git-Les-branches-en-bref
+- https://carlchenet.com/debuter-avec-git-partie-4-les-commits-et-les-branches/
+- avec la doc officielle ( pour comprendre la théorie derrière, peut aider à structurer la compréhension ) : 
+  - https://git-scm.com/book/fr/v2/Les-branches-avec-Git-Les-branches-en-bref
 
 cours OpenClassrooms :
-https://openclassrooms.com/fr/courses/1233741-gerez-vos-codes-source-avec-git
+- https://openclassrooms.com/fr/courses/1233741-gerez-vos-codes-source-avec-git
 
 git expliqué avec des schémas visuels ( et rappel des commandes )
-https://blog.lesieur.name/comprendre-et-utiliser-git-avec-vos-projets/
-https://marklodato.github.io/visual-git-guide/index-fr.html
+- https://blog.lesieur.name/comprendre-et-utiliser-git-avec-vos-projets/
+- https://marklodato.github.io/visual-git-guide/index-fr.html
 
 
 slides :
-https://raspberry-pi.fr/cours/slides-git.html#/10/1
-http://slides.com/moji3000/git_presentation/fullscreen#/15
+- https://raspberry-pi.fr/cours/slides-git.html#/10/1
+- http://slides.com/moji3000/git_presentation/fullscreen#/15
 
 vidéos :
-https://www.grafikart.fr/tutoriels/git-presentation-1090
+- https://www.grafikart.fr/tutoriels/git-presentation-1090
