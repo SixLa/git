@@ -34,19 +34,57 @@
  Contexte
  ------
  
- Git permet de versionner du code, créer des sauvegardes successives ( ce qu'on apppelle un commit ) qui permettent de conserver l'historique des modifications, donc l'évolution du projet, car chaque commit se rajoute à la suite des autres.
- 
- Imaginez une personne qui prend une photo d'elle même tous les matins pendant 20ans.
- Chaque photo représente une légère variation de la veille.
- En mettant par exemple une date derrière chaque photo, on peut retrouver quel était le visage de cet personne à 21 ans et 4jours par exemple.
- 
- Git ne fait qu'observer les fichiers présents dans le **dossier de travail**. On appelle le dossier de travail : le working directory ( vous trouverez des réferences à cette appelation dans les sujet en anglais.
+Git permet de **versionner** du code,c'est-à-dire créer des sauvegardes successives ( ce qu'on apppelle un commit ) qui permettent de conserver l'historique des modifications, donc l'évolution du projet, car chaque commit se rajoute à la suite des autres.
 
-    
- Travail en local ( sur le poste de travail uniquement )
- ----
+Un commit est le nom donné à une sauvegarde faite des modifications en cours.
+Quand j'ai commité, il n'y a plus de modifications en cours, jusqu'à ce que je modifie de nouveau un fichier.
 
-Les autres commandes ( git ) sont sur la ressource indiquée : http://rogerdudler.github.io/git-guide
+
+Analogie pour expliquer :
+----
+
+Imaginez une personne qui prend une photo d'elle même tous les matins pendant 20ans.
+
+
+Chaque photo représente une légère variation de la veille.
+En mettant par exemple une date derrière chaque photo, on peut retrouver quel était le visage de cet personne à 21 ans et 4jours par exemple.
+
+Dans un cadre plus large, git permet également créer une histoire (succession de commits ) constituée de commits faits par différentes personnes d'une même équipe.
+L'idée étant que plusieurs personnes pourront s'occuper de travailler sur la même application sans se marcher sur les pieds, et avec un moyen de rassembler ( fusionner ) leurs travaux, pour que chacun récupère les modifications faites par les autres.
+
+Si on reprend le principe de l'album photo, un projet web serait représenté par une famille entière, et l'album sera alors composée de photo de toutes les personnes qui ont posé chaque jour.
+
+Dans un projet, tout le monde ne travaille pas tout le temps sur ce projet, les contributions pourront être irrégulières ou pas, ce n'est pas un problème en soi. 
+
+---
+ 
+Git ne fait qu'observer les fichiers présents dans le **dossier de travail**. On appelle le dossier de travail : le working directory ( vous trouverez des réferences à cette appelation dans les sujet en anglais.
+
+L'espace réservé dans lequel on va préparer les fichiers pour pouvoir les commiter s'appelle le **Stage**.
+
+Il s'agit d'un marquage que git va opérer pour dire qu'il sont prêt au commit.
+
+Je peux avoir envie de travailler sur 3 fichiers mais vouloir n'en sauvegarder les modifications que d'un.
+
+La commande ```git add <nomdefichier>``` permet au fichier en question d'être préparé par git pour faire partie du commit.
+
+Analogie :
+
+J'écris une lettre ( un fichier )
+
+Je dispose d'une enveloppe pour poster ma lettre.
+Tant que l'enveloppe est ouverte, je peux y rajouter d'autres lettres, une photo, ou je peux reprendre et la modifier.
+
+Le stage c'est l'enveloppe, tant qu'elle est ouverte.
+
+Quand j'ai décidé que j'étais prêt à poster l'enveloppe, je la ferme.
+L'enveloppe refermée ne pourra plus voir les lettres qu'elle contient modifiées, on vient de faire un commit.
+
+
+Travail en local ( sur le poste de travail uniquement )
+----
+
+Les autres commandes ( git ) sont sur la ressource indiquée : 
 
 1) créez un dossier 
 2) se déplacer dans le dossier
@@ -120,6 +158,7 @@ explication pas à pas :
 https://perso.liris.cnrs.fr/pierre-antoine.champin/enseignement/intro-git/
 
 rappel des commandes utiles : 
+http://rogerdudler.github.io/git-guide
 https://www.hostinger.fr/tutoriels/commandes-git/
 
 description du workflow et des commandes :
