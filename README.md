@@ -14,7 +14,15 @@
 
 ### Commmandes git
 
+``` git clone path/to/repo/git``` clone le repo en local
+
 ``` git init``` initialiser un repository ( repo ) git
+
+``` git remote add origin url/du/repo/https/ou/ssh``` crée un alias origin avec la valeur associée
+
+``` git remote set-url origin url/du/repo/https/ou/ssh``` met à jour la valeur de l'alias ( origin ici )
+
+```git remote -v``` liste les aliases vers les url
 
 ```git status``` pour voir l'état du dossier de travail ( vis à vis du stage )
 
