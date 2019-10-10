@@ -28,10 +28,11 @@
 
 ```git log``` pour voir l'historique des commit
 
-```git add <nomDeMonFichier>``` pour ajouter un fichier dans le **Stage** avant de pouvoir le commiter ( ex: ```git add index.html``` ) 
+```git add nomDeMonFichier``` pour ajouter un fichier dans le **Stage** avant de pouvoir le commiter ( ex: ```git add index.html``` ) 
+
 ```git add --all ``` permet d'ajouter tous les fichiers du dossier dans lequel vous etes dans le **Stage**
 
-```git commit -m 'mon message'``` pour l'ensemble des fichiers ajoutés avec ```git add```
+```git commit -m 'message de commit que je choisis'``` pour commiter l'ensemble des fichiers ajoutés avec ```git add```
 
 
 :warning: pensez à renseigner vos informations via les commandes :warning: 
@@ -39,13 +40,14 @@
     git config --global user.email 'mon mail'
     git config --global user.name 'mon nom'
     
- Contexte
+Contexte
  ------
  
-Git permet de **versionner** du code,c'est-à-dire créer des sauvegardes successives ( ce qu'on apppelle un commit ) qui permettent de conserver l'historique des modifications, donc l'évolution du projet, car chaque commit se rajoute à la suite des autres.
+Git permet de **versionner** du code, c'est-à-dire créer des sauvegardes successives ( ce qu'on apppelle un commit ) qui permettent de conserver l'historique des modifications, donc l'évolution du projet, car chaque commit se rajoute à la suite des autres.
 
 Un commit est le nom donné à une sauvegarde faite des modifications en cours.
-Quand j'ai commité, il n'y a plus de modifications en cours, jusqu'à ce que je modifie de nouveau un fichier.
+Quand j'ai commité, il n'y a plus de modifications en cours ( le **Stage** est maintenant vide), jusqu'à ce que je modifie de nouveau un fichier, puis l'ajoute au stage
+
 
 
 Analogie pour expliquer :
@@ -55,7 +57,8 @@ Imaginez une personne qui prend une photo d'elle même tous les matins pendant 2
 
 
 Chaque photo représente une légère variation de la veille.
-En mettant par exemple une date derrière chaque photo, on peut retrouver quel était le visage de cet personne à 21 ans et 4jours par exemple.
+En mettant par exemple une date derrière chaque photo ( ce qui correspond au message de commit ici ), on peut retrouver quel était le visage de cette personne à 21 ans et 4 jours par exemple.
+
 
 Dans un cadre plus large, git permet également créer une histoire (succession de commits ) constituée de commits faits par différentes personnes d'une même équipe.
 L'idée étant que plusieurs personnes pourront s'occuper de travailler sur la même application sans se marcher sur les pieds, et avec un moyen de rassembler ( fusionner ) leurs travaux, pour que chacun récupère les modifications faites par les autres.
@@ -72,9 +75,9 @@ L'espace réservé dans lequel on va préparer les fichiers pour pouvoir les com
 
 Il s'agit d'un marquage que git va opérer pour dire qu'il sont prêt au commit.
 
-Je peux avoir envie de travailler sur 3 fichiers mais vouloir n'en sauvegarder les modifications que d'un.
+Je peux avoir envie de travailler sur 3 fichiers mais vouloir n'en sauvegarder les modifications que d'un seul.
 
-La commande ```git add <nomdefichier>``` permet au fichier en question d'être préparé par git pour faire partie du commit.
+La commande ```git add nomdefichier``` permet au fichier en question d'être préparé par git pour faire partie du commit.
 
 Analogie :
 
@@ -118,13 +121,15 @@ Commandes
 
 ```git merge maBranche```  pour merger la branche nommée sur la branche actuelle
 
+:warning: ici maBranche est un exemple, vous choisissez le nom de la branche lorsque vous la créez.
+
 Instructions
 ------
 
 1) créez une branche
 2) faites un commit sur master ( en modifiant la ligne 1 de votre fichier )
 3) changez de branche 
-4) nouveau commit sur la meme ligne 
+4) nouveau commit en ayant préalablement modifié la même ligne 
 5) mergez ensuite master sur votre branche
 6) résolvez les conflits !
 7) commitez :)
@@ -135,7 +140,7 @@ Instructions
 Faire le lien avec github 
 ------
 
-- créez un repo
+- créez un repo sur github
 - récupérer la commande exposée par github quand vous avez créé votre repo ( le ```git remote add origin URLDeMonRepoCréé``` )
 ( celle qui fait git remote add origin en https, pas ssh )
 
@@ -147,7 +152,7 @@ vérifiez avec ```git remote -v```
 ===== faire un push =====
 
 pour envoyer les commit sur le serveur, on fait un ```git push origin master```
-Si vous avez créé une autre branche et que vous êtes dessus, il faudrait indiquer le nom de cette branche à la place de master
+:warning: Si vous avez créé une autre branche et que vous êtes dessus, il faudrait indiquer le nom de cette branche à la place de master. :warning:
 
 
 
